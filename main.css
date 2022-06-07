@@ -1,10 +1,100 @@
-body {
-  background: blue;
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap");
+#main {
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 0 0em;
+}
+
+#main #nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em;
+}
+
+#main #nav .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+#main #nav .nav-logo .nav-logo-img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+#main #nav .nav-logo .nav-logo-text {
+  color: #0a335b;
+  font-family: "Courier Prime", monospace;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.6rem;
+}
+
+#main #nav .nav-btn-con a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fa9917;
+  background: #0a335b;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+
+#main #nav .nav-btn-con .nav-btn-1 {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  margin-right: 0.3em;
+}
+
+#main #nav .nav-btn-con .nav-btn-2 {
+  padding: 1em 1.5em;
+  text-transform: capitalize;
+}
+
+#main .hero-section {
+  background: #000;
+  padding: 2em 6em;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#main .hero-section .hero-img {
+  width: 60%;
+}
+
+#main .hero-section .hero-descrip h1 {
+  color: #fa9917;
+  font-family: "Courier Prime", monospace;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+#main .hero-section .hero-descrip h2 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#main .hero-section .hero-descrip p {
+  color: #99e5e8;
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+}
+
+#main .hero-section p {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
