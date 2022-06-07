@@ -51,34 +51,43 @@
     background: #000;
     padding: 2em 6em;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    // grid-template-rows: repeat(4, 100px);
-    .hero-img {
-      width: 60%;
+
+    .hero {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 4em;
+      .hero-img {
+        width: 30%;
+      }
+      .hero-descrip {
+        text-align: center;
+        h1 {
+          color: $secondary-color;
+          font-family: $secondary-font;
+          text-transform: capitalize;
+          font-size: 5em;
+          margin-bottom: 0;
+        }
+        h2 {
+          color: #fff;
+          font-family: $primary-font;
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+        p {
+          color: #99e5e8;
+          font-family: $primary-font;
+          font-style: italic;
+          font-size: 1.5rem;
+        }
+      }
     }
-    .hero-descrip {
-      h1 {
-        color: $secondary-color;
-        font-family: $secondary-font;
-        text-transform: uppercase;
-        font-size: 3em;
-      }
-      h2 {
-        color: #fff;
-        font-family: $primary-font;
-        font-weight: bold;
-        font-size: 2rem;
-      }
-      p {
-        color: #99e5e8;
-        font-family: $primary-font;
-        font-style: italic;
-      }
-    }
+
     p {
       color: #fff;
       font-family: $primary-font;
+      font-size: 1.2rem;
     }
+    // grid-template-rows: repeat(4, 100px);
   }
 }
