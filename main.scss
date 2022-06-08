@@ -127,6 +127,7 @@
       margin-left: 1em;
       span {
         border-bottom: solid 5px;
+        line-height: 1px;
       }
     }
     p {
@@ -138,6 +139,35 @@
     // p{
     //   color: #fa9917;
     // }
+  }
+
+  /*----------------STEPS----------------*/
+  .steps-section > div:first-of-type {
+    text-align: center;
+    padding: 2em 0;
+    h1 {
+      font-family: $secondary-font;
+      font-size: 3rem;
+      padding: 0 5em;
+    }
+    p {
+      font-size: 1.4rem;
+      font-family: $primary-font;
+    }
+  }
+  .steps-section {
+    padding: 3em 3em 1em;
+    background-color: #4f4f4f;
+    color: white;
+    p {
+      font-size: 1.3rem;
+    }
+    .steps {
+      span {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+    }
   }
 }
 

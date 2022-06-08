@@ -7,6 +7,7 @@
   /*--------------NAV------------------*/
   /*---------------HERO-----------------*/
   /*-----------------ARTICLE---------------*/
+  /*----------------STEPS----------------*/
 }
 
 #main #nav {
@@ -160,6 +161,7 @@
 
 #main .article h1 span {
   border-bottom: solid 5px;
+  line-height: 1px;
 }
 
 #main .article p {
@@ -167,6 +169,37 @@
   font-family: "Raleway", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
+}
+
+#main .steps-section > div:first-of-type {
+  text-align: center;
+  padding: 2em 0;
+}
+
+#main .steps-section > div:first-of-type h1 {
+  font-family: "Courier Prime", monospace;
+  font-size: 3rem;
+  padding: 0 5em;
+}
+
+#main .steps-section > div:first-of-type p {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#main .steps-section {
+  padding: 3em 3em 1em;
+  background-color: #4f4f4f;
+  color: white;
+}
+
+#main .steps-section p {
+  font-size: 1.3rem;
+}
+
+#main .steps-section .steps span {
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 /*--------------------------------*/
