@@ -1,0 +1,20 @@
+{
+  "name": "Turung",
+  "version": "1.0.0",
+  "description": "Turung is an online smartstore that allows traditional brick and mortar businesses to process crypto-fiat liquidity through a decentralized payment system called TURUpay.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictoriaAde/Turung.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictoriaAde/Turung/issues"
+  },
+  "homepage": "https://github.com/VictoriaAde/Turung#readme"
+}
