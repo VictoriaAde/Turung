@@ -4,13 +4,10 @@
   width: 100%;
   height: 100vh;
   padding: 0 0em;
-  /*--------------NAV------------------*/
-  /*---------------HERO-----------------*/
-  /*-----------------ARTICLE---------------*/
-  /*----------------STEPS----------------*/
 }
 
-#main #nav {
+/*--------------NAV------------------*/
+#nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,19 +21,19 @@
   margin: 1em 0;
 }
 
-#main #nav .nav-logo {
+.nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
 
-#main #nav .nav-logo .nav-logo-img {
+.nav-logo .nav-logo-img {
   width: 10%;
   border-radius: 50%;
 }
 
-#main #nav .nav-logo .nav-logo-text {
+.nav-logo .nav-logo-text {
   color: #0b335b;
   font-family: "Courier Prime", monospace;
   -ms-flex-item-align: center;
@@ -45,7 +42,7 @@
   font-size: 1.6rem;
 }
 
-#main #nav .nav-btn-con a {
+.nav-btn-con a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #fa9917;
@@ -56,23 +53,24 @@
   font-family: "Raleway", sans-serif;
 }
 
-#main #nav .nav-btn-con .nav-btn-1 {
+.nav-btn-con .nav-btn-1 {
   padding: 1em 2em;
   text-transform: uppercase;
   margin-right: 0.3em;
 }
 
-#main #nav .nav-btn-con .nav-btn-2 {
+.nav-btn-con .nav-btn-2 {
   padding: 1em 1.5em;
   text-transform: capitalize;
 }
 
-#main .hero-section {
+/*---------------HERO-----------------*/
+.hero-con {
   background: #000;
   padding: 3em 6em;
 }
 
-#main .hero-section .hero {
+.hero-con .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,15 +79,15 @@
   padding-bottom: 4em;
 }
 
-#main .hero-section .hero .hero-img {
+.hero-con .hero .hero-img {
   width: 30%;
 }
 
-#main .hero-section .hero .hero-descrip {
+.hero-con .hero .hero-descrip {
   text-align: center;
 }
 
-#main .hero-section .hero .hero-descrip h1 {
+.hero-con .hero .hero-descrip h1 {
   color: #fa9917;
   font-family: "Courier Prime", monospace;
   text-transform: capitalize;
@@ -97,27 +95,28 @@
   margin-bottom: 0;
 }
 
-#main .hero-section .hero .hero-descrip h2 {
+.hero-con .hero .hero-descrip h2 {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-#main .hero-section .hero .hero-descrip p {
+.hero-con .hero .hero-descrip p {
   color: #99e5e8;
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 1.5rem;
 }
 
-#main .hero-section p {
+.hero-con p {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
 }
 
-#main .article .article-content_one {
+/*-----------------ARTICLE---------------*/
+.article .article-content_one {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 4fr 8fr;
@@ -130,14 +129,14 @@
   text-align: justify;
 }
 
-#main .article .article-content_one .article-red-text {
+.article .article-content_one .article-red-text {
   font-family: "Raleway", sans-serif;
   color: #fa9917;
   font-size: 1.7em;
   font-style: italic;
 }
 
-#main .article .article-content_two {
+.article .article-content_two {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 4fr;
@@ -150,7 +149,13 @@
   text-align: justify;
 }
 
-#main .article h1 {
+.article .article-content_two .turupay {
+  -webkit-box-ordinal-group: 10000;
+      -ms-flex-order: 9999;
+          order: 9999;
+}
+
+.article h1 {
   text-transform: capitalize;
   font-size: 3rem;
   font-family: "Courier Prime", monospace;
@@ -159,48 +164,181 @@
   margin-left: 1em;
 }
 
-#main .article h1 span {
+.article h1 span {
   border-bottom: solid 5px;
   line-height: 1px;
 }
 
-#main .article p {
+.article p {
   color: #0b335b;
   font-family: "Raleway", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
 }
 
-#main .steps-section > div:first-of-type {
+/*----------------STEPS----------------*/
+.steps-section > div:first-of-type {
   text-align: center;
   padding: 2em 0;
 }
 
-#main .steps-section > div:first-of-type h1 {
+.steps-section > div:first-of-type h1 {
   font-family: "Courier Prime", monospace;
   font-size: 3rem;
   padding: 0 5em;
 }
 
-#main .steps-section > div:first-of-type p {
+.steps-section > div:first-of-type p {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
 }
 
-#main .steps-section {
+.steps-section {
   padding: 3em 3em 1em;
   background-color: #4f4f4f;
   color: white;
 }
 
-#main .steps-section p {
+.steps-section p {
   font-size: 1.3rem;
 }
 
-#main .steps-section .steps span {
+.steps-section .steps span {
   font-weight: bold;
   font-size: 1.3em;
 }
 
 /*--------------------------------*/
+@media (max-width: 1100px) {
+  /*---------------HERO-----------------*/
+  .hero-con .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 4em;
+  }
+  .hero-con .hero .hero-img {
+    width: 40%;
+  }
+  .hero-con .hero .hero-descrip {
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip h1 {
+    font-size: 3.4em;
+  }
+  .hero-con .hero .hero-descrip h2 {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .hero-con .hero .hero-descrip p {
+    font-size: 1.1rem;
+  }
+  .hero-con .hero p {
+    font-size: 1rem;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2.5rem;
+    padding: 0 3em;
+  }
+}
+
+/*--------------------------------*/
+@media (max-width: 906px) {
+  /*----------------NAV----------------*/
+  .nav-btn-con a {
+    font-size: 1rem;
+  }
+  .nav-btn-con .nav-btn-1 {
+    padding: 0.4em 1.5em;
+  }
+  .nav-btn-con .nav-btn-2 {
+    padding: 0.6em 1em;
+  }
+  /*---------------HERO-----------------*/
+  .hero-con .hero {
+    display: block;
+    padding-bottom: 4em;
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip {
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip h1 {
+    font-size: 4em;
+  }
+  .hero-con .hero .hero-descrip h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .hero-con .hero .hero-descrip p {
+    font-size: 1.2rem;
+  }
+  .hero-con .hero p {
+    font-size: 1rem;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2.3rem;
+    padding: 0 3em;
+  }
+  /*-----------------ARTICLE---------------*/
+  .article .article-content_one {
+    display: block;
+    text-align: center;
+  }
+  .article .article-content_one .article-red-text {
+    font-size: 1.3em;
+  }
+  .article .article-content_two {
+    display: block;
+    padding: 2em;
+    text-align: center;
+  }
+  .article .article-content_two .turupay {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .article h1 {
+    font-size: 3rem;
+    margin-left: 1em;
+  }
+  .article p {
+    font-size: 1.1em;
+  }
+}
+
+/*--------------------------------*/
+@media (max-width: 506px) {
+  /*---------------HERO-----------------*/
+  .hero-con {
+    padding: 3em 2.5em;
+    text-align: center;
+  }
+  .article .article-content_one {
+    padding: 2em;
+  }
+  .article .article-content_two {
+    padding: 2em;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type {
+    text-align: center;
+    padding: 0;
+  }
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2rem;
+    padding: 0;
+  }
+  .steps-section > div:first-of-type p {
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+  }
+}
 /*# sourceMappingURL=main.css.map */
