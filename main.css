@@ -3,7 +3,7 @@
   background: #fff;
   width: 100%;
   height: 100vh;
-  padding: 0 0em;
+  padding: 0;
 }
 
 /*--------------NAV------------------*/
@@ -194,6 +194,7 @@
 }
 
 .steps-section {
+  margin: 2em 0.8em;
   padding: 3em 3em 1em;
   background-color: #4f4f4f;
   color: white;
@@ -208,6 +209,119 @@
   font-size: 1.3em;
 }
 
+.benefits-con {
+  background-color: #c8c8c8;
+  padding: 2em 1em 4em;
+  margin: 2em 0.8em;
+}
+
+.benefits-con .benefits-desc {
+  color: #831481;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.benefits-con .benefits-desc h1 {
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.benefits-con .benefits-desc p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+
+.benefits-con .benefits {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.benefits-con .benefits img {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.benefits-con .benefits .benefit {
+  padding: 3em 2em;
+  text-align: justify;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.3rem;
+}
+
+.benefits-con .benefits .benefit .benefit-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+.benefits-con .benefits .benefit-one {
+  background-color: #074610;
+  color: #fff;
+}
+
+.benefits-con .benefits .benefit-two {
+  background-color: #6f3434;
+  color: #fff;
+}
+
+.benefits-con .benefits .benefit-three {
+  background-color: #09233e;
+  color: #fff;
+}
+
+.benefits-con .benefits .benefit-four {
+  background-color: #311f07;
+  color: #fff;
+}
+
+.benefits-con .benefits .benefit-five {
+  background-color: #31062d;
+  color: #fff;
+}
+
+.token-section {
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  margin: 2em 0.8em;
+}
+
+.token-section .gold-img-con {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.token-section .gold-img-con .gold-img {
+  width: 100%;
+}
+
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------MEDIA QUERIES------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 1100px) {
   /*---------------HERO-----------------*/
@@ -246,6 +360,7 @@
   }
 }
 
+/*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 906px) {
   /*----------------NAV----------------*/
@@ -313,6 +428,7 @@
   }
 }
 
+/*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 506px) {
   /*---------------HERO-----------------*/
