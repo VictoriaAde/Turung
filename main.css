@@ -321,11 +321,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
   margin: 2em 0.8em;
+  padding: 2rem 6rem 2rem 2rem;
 }
 
 .token-section .gold-img-con {
+  margin-right: 2rem;
   width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +341,54 @@
 
 .token-section .gold-img-con .gold-img {
   width: 100%;
+}
+
+.token-section .token-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+.token-section .token-desc h1 {
+  font-weight: bold;
+  font-family: "Courier Prime", monospace;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.token-section .token-desc p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.token-section .token-desc span.turung-bold {
+  font-weight: bold;
+}
+
+.token-section .token-desc .buy-btn-con {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.token-section .token-desc .buy-btn-con .buy-btn {
+  text-transform: uppercase;
+  background: #0b335b;
+  color: #fa9917;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border: double 2px #74c100d1;
+  border-radius: 10px;
 }
 
 /*--------------------------------*/
@@ -488,6 +537,16 @@
   .steps-section > div:first-of-type p {
     font-size: 1.2rem;
     font-family: "Raleway", sans-serif;
+  }
+  .token-desc h1 {
+    font-size: 2rem;
+  }
+  .token-desc p {
+    font-size: 1.3rem;
+  }
+  .token-desc .buy-btn {
+    padding: 1em 3em !important;
+    font-size: 1rem !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

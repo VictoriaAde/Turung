@@ -253,15 +253,52 @@
   background-color: #000;
   color: $white;
   display: flex;
-  height: 500px;
   margin: $uni-margin;
+
+  padding: 2rem 6rem 2rem 2rem;
   .gold-img-con {
+    margin-right: 2rem;
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     .gold-img {
       width: 100%;
+    }
+  }
+  .token-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    h1 {
+      font-weight: bold;
+      font-family: $secondary-font;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-family: $primary-font;
+    }
+    span.turung-bold {
+      font-weight: bold;
+    }
+    .buy-btn-con {
+      margin: 3em 0;
+      text-align: center;
+      .buy-btn {
+        text-transform: uppercase;
+        background: $primary-color;
+        color: $secondary-color;
+        padding: 1rem 5rem;
+        text-decoration: none;
+        font-size: 2rem;
+        border: double 2px #74c100d1;
+        border-radius: 10px;
+      }
     }
   }
 }
@@ -428,6 +465,18 @@
     p {
       font-size: 1.2rem;
       font-family: $primary-font;
+    }
+  }
+  .token-desc {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    .buy-btn {
+      padding: 1em 3em !important;
+      font-size: 1rem !important;
     }
   }
 }
