@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap");
 #main {
   background: #fff;
-  width: 100%;
+  min-width: 100%;
   height: 100vh;
-  padding: 0 0em;
-  /*--------------NAV------------------*/
-  /*---------------HERO-----------------*/
-  /*-----------------ARTICLE---------------*/
+  padding: 0;
 }
 
-#main #nav {
+/*--------------NAV------------------*/
+#nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,19 +21,19 @@
   margin: 1em 0;
 }
 
-#main #nav .nav-logo {
+.nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
 
-#main #nav .nav-logo .nav-logo-img {
+.nav-logo .nav-logo-img {
   width: 10%;
   border-radius: 50%;
 }
 
-#main #nav .nav-logo .nav-logo-text {
+.nav-logo .nav-logo-text {
   color: #0b335b;
   font-family: "Courier Prime", monospace;
   -ms-flex-item-align: center;
@@ -44,7 +42,7 @@
   font-size: 1.6rem;
 }
 
-#main #nav .nav-btn-con a {
+.nav-btn-con a {
   text-decoration: none;
   font-size: 1.2rem;
   color: #fa9917;
@@ -55,23 +53,24 @@
   font-family: "Raleway", sans-serif;
 }
 
-#main #nav .nav-btn-con .nav-btn-1 {
+.nav-btn-con .nav-btn-1 {
   padding: 1em 2em;
   text-transform: uppercase;
   margin-right: 0.3em;
 }
 
-#main #nav .nav-btn-con .nav-btn-2 {
+.nav-btn-con .nav-btn-2 {
   padding: 1em 1.5em;
   text-transform: capitalize;
 }
 
-#main .hero-section {
+/*---------------HERO-----------------*/
+.hero-con {
   background: #000;
   padding: 3em 6em;
 }
 
-#main .hero-section .hero {
+.hero-con .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,15 +79,15 @@
   padding-bottom: 4em;
 }
 
-#main .hero-section .hero .hero-img {
+.hero-con .hero .hero-img {
   width: 30%;
 }
 
-#main .hero-section .hero .hero-descrip {
+.hero-con .hero .hero-descrip {
   text-align: center;
 }
 
-#main .hero-section .hero .hero-descrip h1 {
+.hero-con .hero .hero-descrip h1 {
   color: #fa9917;
   font-family: "Courier Prime", monospace;
   text-transform: capitalize;
@@ -96,27 +95,28 @@
   margin-bottom: 0;
 }
 
-#main .hero-section .hero .hero-descrip h2 {
+.hero-con .hero .hero-descrip h2 {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
 }
 
-#main .hero-section .hero .hero-descrip p {
+.hero-con .hero .hero-descrip p {
   color: #99e5e8;
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 1.5rem;
 }
 
-#main .hero-section p {
+.hero-con p {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
 }
 
-#main .article .article-content_one {
+/*-----------------ARTICLE---------------*/
+.article .article-content_one {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 4fr 8fr;
@@ -129,14 +129,14 @@
   text-align: justify;
 }
 
-#main .article .article-content_one .article-red-text {
+.article .article-content_one .article-red-text {
   font-family: "Raleway", sans-serif;
   color: #fa9917;
   font-size: 1.7em;
   font-style: italic;
 }
 
-#main .article .article-content_two {
+.article .article-content_two {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 4fr;
@@ -149,7 +149,13 @@
   text-align: justify;
 }
 
-#main .article h1 {
+.article .article-content_two .turupay {
+  -webkit-box-ordinal-group: 10000;
+      -ms-flex-order: 9999;
+          order: 9999;
+}
+
+.article h1 {
   text-transform: capitalize;
   font-size: 3rem;
   font-family: "Courier Prime", monospace;
@@ -158,16 +164,389 @@
   margin-left: 1em;
 }
 
-#main .article h1 span {
+.article h1 span {
   border-bottom: solid 5px;
+  line-height: 1px;
 }
 
-#main .article p {
+.article p {
   color: #0b335b;
   font-family: "Raleway", sans-serif;
   font-size: 1.3em;
   font-weight: bold;
 }
 
+/*----------------STEPS----------------*/
+.steps-section > div:first-of-type {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.steps-section > div:first-of-type h1 {
+  font-family: "Courier Prime", monospace;
+  font-size: 3rem;
+  padding: 0 5em;
+}
+
+.steps-section > div:first-of-type p {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.steps-section {
+  margin: 2em 0.8em;
+  padding: 3em 3em 1em;
+  background-color: #4f4f4f;
+  color: white;
+}
+
+.steps-section p {
+  font-size: 1.3rem;
+}
+
+.steps-section .steps span {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.benefits-con {
+  background-color: #c8c8c8;
+  padding: 2em 1em 4em;
+  margin: 2em 0.8em;
+}
+
+.benefits-con .benefits-desc {
+  color: #831481;
+  text-align: center;
+  padding: 0 3em;
+}
+
+.benefits-con .benefits-desc h1 {
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.benefits-con .benefits-desc p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+
+.benefits-con .benefits {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "benefit-one benefit-three benefit-four" "benefit-two benefit-three benefit-five";
+  grid-auto-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefits-con .benefits img {
+  width: 30%;
+}
+
+.benefits-con .benefits .benefit {
+  padding: 1em 1em;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits-con .benefits .benefit .benefit-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+.benefits-con .benefits .benefit-one {
+  background-color: #074610;
+  color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: benefit-one;
+}
+
+.benefits-con .benefits .benefit-two {
+  background-color: #6f3434;
+  color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: benefit-two;
+}
+
+.benefits-con .benefits .benefit-three {
+  background-color: #09233e;
+  color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: benefit-three;
+}
+
+.benefits-con .benefits .benefit-three img {
+  width: 40%;
+}
+
+.benefits-con .benefits .benefit-four {
+  background-color: #311f07;
+  color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: benefit-four;
+}
+
+.benefits-con .benefits .benefit-five {
+  background-color: #31062d;
+  color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: benefit-five;
+}
+
+.token-section {
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 0.8em;
+  padding: 2rem 6rem 2rem 2rem;
+}
+
+.token-section .gold-img-con {
+  margin-right: 2rem;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.token-section .gold-img-con .gold-img {
+  width: 100%;
+}
+
+.token-section .token-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+.token-section .token-desc h1 {
+  font-weight: bold;
+  font-family: "Courier Prime", monospace;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.token-section .token-desc p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.token-section .token-desc span.turung-bold {
+  font-weight: bold;
+}
+
+.token-section .token-desc .buy-btn-con {
+  margin: 3em 0;
+  text-align: center;
+}
+
+.token-section .token-desc .buy-btn-con .buy-btn {
+  text-transform: uppercase;
+  background: #0b335b;
+  color: #fa9917;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border: double 2px #74c100d1;
+  border-radius: 10px;
+}
+
 /*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------MEDIA QUERIES------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+/*--------------------------------*/
+@media (max-width: 1100px) {
+  /*---------------HERO-----------------*/
+  .hero-con .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 4em;
+  }
+  .hero-con .hero .hero-img {
+    width: 40%;
+  }
+  .hero-con .hero .hero-descrip {
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip h1 {
+    font-size: 3.4em;
+  }
+  .hero-con .hero .hero-descrip h2 {
+    color: #fff;
+    font-size: 1.7rem;
+  }
+  .hero-con .hero .hero-descrip p {
+    font-size: 1.1rem;
+  }
+  .hero-con .hero p {
+    font-size: 1rem;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2.5rem;
+    padding: 0 3em;
+  }
+}
+
+/*--------------------------------*/
+/*--------------------------------*/
+@media (max-width: 906px) {
+  /*----------------NAV----------------*/
+  .nav-btn-con a {
+    font-size: 1rem;
+  }
+  .nav-btn-con .nav-btn-1 {
+    padding: 0.4em 1.5em;
+  }
+  .nav-btn-con .nav-btn-2 {
+    padding: 0.6em 1em;
+  }
+  /*---------------HERO-----------------*/
+  .hero-con .hero {
+    display: block;
+    padding-bottom: 4em;
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip {
+    text-align: center;
+  }
+  .hero-con .hero .hero-descrip h1 {
+    font-size: 4em;
+  }
+  .hero-con .hero .hero-descrip h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .hero-con .hero .hero-descrip p {
+    font-size: 1.2rem;
+  }
+  .hero-con .hero p {
+    font-size: 1rem;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2.3rem;
+    padding: 0 3em;
+  }
+  /*-----------------ARTICLE---------------*/
+  .article .article-content_one {
+    display: block;
+    text-align: center;
+  }
+  .article .article-content_one .article-red-text {
+    font-size: 1.3em;
+  }
+  .article .article-content_two {
+    display: block;
+    padding: 2em;
+    text-align: center;
+  }
+  .article .article-content_two .turupay {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .article h1 {
+    font-size: 3rem;
+    margin-left: 1em;
+  }
+  .article p {
+    font-size: 1.1em;
+  }
+  .benefits {
+        grid-template-areas: "benefit-one" "benefit-two" "benefit-three" "benefit-four" "benefit-five" !important;
+  }
+  .benefits img {
+    width: 25% !important;
+  }
+}
+
+/*--------------------------------*/
+/*--------------------------------*/
+@media (max-width: 506px) {
+  /*---------------HERO-----------------*/
+  .hero-con {
+    padding: 3em 2.5em;
+    text-align: center;
+  }
+  .article .article-content_one {
+    padding: 2em;
+  }
+  .article .article-content_two {
+    padding: 2em;
+  }
+  /*-----------------STEPS---------------*/
+  .steps-section > div:first-of-type {
+    text-align: center;
+    padding: 0;
+  }
+  .steps-section > div:first-of-type h1 {
+    font-family: "Courier Prime", monospace;
+    font-size: 2rem;
+    padding: 0;
+  }
+  .steps-section > div:first-of-type p {
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+  }
+  .token-desc h1 {
+    font-size: 2rem;
+  }
+  .token-desc p {
+    font-size: 1.3rem;
+  }
+  .token-desc .buy-btn {
+    padding: 1em 3em !important;
+    font-size: 1rem !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
