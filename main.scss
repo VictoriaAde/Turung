@@ -2,7 +2,7 @@
 
 #main {
   background: $white;
-  width: 100%;
+  min-width: 100%;
   height: 100vh;
   padding: 0;
 }
@@ -190,19 +190,26 @@
   }
   .benefits {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-rows: auto;
-    grid-gap: 2em;
+    grid-template-areas:
+      "benefit-one benefit-three benefit-four"
+      "benefit-two benefit-three benefit-five";
+    grid-auto-columns: 1fr;
+    gap: 1.5rem;
     img {
-      width: 40%;
-      border-radius: 50%;
+      width: 30%;
+      // border-radius: 50%;
     }
     .benefit {
       // height: 250px;
-      padding: 3em 2em;
-      text-align: justify;
-      justify-self: center;
+      padding: 1em 1em;
+      // text-align: justify;
+      // justify-self: center;
       font-size: 1.3rem;
+      border-radius: 10px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .benefit-img {
         display: flex;
         justify-content: center;
@@ -213,22 +220,32 @@
       background-color: #074610;
       color: $white;
       // height: 300px;
+      grid-area: benefit-one;
     }
     .benefit-two {
       background-color: #6f3434;
       color: $white;
+      grid-area: benefit-two;
     }
     .benefit-three {
       background-color: #09233e;
       color: $white;
+      // grid-row: span 2;
+      grid-area: benefit-three;
+
+      img {
+        width: 40%;
+      }
     }
     .benefit-four {
       background-color: #311f07;
       color: $white;
+      grid-area: benefit-four;
     }
     .benefit-five {
       background-color: #31062d;
       color: $white;
+      grid-area: benefit-five;
     }
   }
 }
@@ -366,6 +383,17 @@
     }
     p {
       font-size: 1.1em;
+    }
+  }
+  .benefits {
+    grid-template-areas:
+      "benefit-one"
+      "benefit-two"
+      "benefit-three"
+      "benefit-four"
+      "benefit-five" !important;
+    img {
+      width: 25% !important;
     }
   }
 }

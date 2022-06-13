@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap");
 #main {
   background: #fff;
-  width: 100%;
+  min-width: 100%;
   height: 100vh;
   padding: 0;
 }
@@ -235,22 +235,29 @@
 .benefits-con .benefits {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
+      grid-template-areas: "benefit-one benefit-three benefit-four" "benefit-two benefit-three benefit-five";
+  grid-auto-columns: 1fr;
+  gap: 1.5rem;
 }
 
 .benefits-con .benefits img {
-  width: 40%;
-  border-radius: 50%;
+  width: 30%;
 }
 
 .benefits-con .benefits .benefit {
-  padding: 3em 2em;
-  text-align: justify;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  padding: 1em 1em;
   font-size: 1.3rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .benefits-con .benefits .benefit .benefit-img {
@@ -266,26 +273,46 @@
 .benefits-con .benefits .benefit-one {
   background-color: #074610;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: benefit-one;
 }
 
 .benefits-con .benefits .benefit-two {
   background-color: #6f3434;
   color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: benefit-two;
 }
 
 .benefits-con .benefits .benefit-three {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: benefit-three;
+}
+
+.benefits-con .benefits .benefit-three img {
+  width: 40%;
 }
 
 .benefits-con .benefits .benefit-four {
   background-color: #311f07;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: benefit-four;
 }
 
 .benefits-con .benefits .benefit-five {
   background-color: #31062d;
   color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: benefit-five;
 }
 
 .token-section {
@@ -425,6 +452,12 @@
   }
   .article p {
     font-size: 1.1em;
+  }
+  .benefits {
+        grid-template-areas: "benefit-one" "benefit-two" "benefit-three" "benefit-four" "benefit-five" !important;
+  }
+  .benefits img {
+    width: 25% !important;
   }
 }
 
