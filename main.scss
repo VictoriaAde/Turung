@@ -91,7 +91,6 @@
     font-family: $primary-font;
     font-size: 1.2rem;
   }
-  // grid-template-rows: repeat(4, 100px);
 }
 
 /*-----------------ARTICLE---------------*/
@@ -197,13 +196,9 @@
     gap: 1.5rem;
     img {
       width: 30%;
-      // border-radius: 50%;
     }
     .benefit {
-      // height: 250px;
       padding: 1em 1em;
-      // text-align: justify;
-      // justify-self: center;
       font-size: 1.3rem;
       border-radius: 10px;
 
@@ -219,7 +214,6 @@
     .benefit-one {
       background-color: #074610;
       color: $white;
-      // height: 300px;
       grid-area: benefit-one;
     }
     .benefit-two {
@@ -230,7 +224,6 @@
     .benefit-three {
       background-color: #09233e;
       color: $white;
-      // grid-row: span 2;
       grid-area: benefit-three;
 
       img {
@@ -353,18 +346,22 @@
 
 @media (max-width: 906px) {
   /*----------------NAV----------------*/
-  .nav-btn-con {
-    a {
-      font-size: 1rem;
-    }
-    .nav-btn-1 {
-      padding: 0.4em 1.5em;
-    }
-    .nav-btn-2 {
-      padding: 0.6em 1em;
+  #nav {
+    padding: 0;
+
+    .nav-btn-con {
+      a {
+        font-size: 1rem;
+      }
+      .nav-btn-1 {
+        padding: 0.4em 1.5em;
+        display: none;
+      }
+      .nav-btn-2 {
+        padding: 0.6em 1em;
+      }
     }
   }
-
   /*---------------HERO-----------------*/
   .hero-con {
     .hero {
@@ -439,21 +436,35 @@
 /*--------------------------------*/
 
 @media (max-width: 506px) {
+  #nav {
+    padding: 0 0.5em;
+    .nav-logo-img {
+      width: 20%;
+      border-radius: 50%;
+    }
+  }
+
   /*---------------HERO-----------------*/
   .hero-con {
-    padding: 3em 2.5em;
-    text-align: center;
+    padding: 3em 1.5em;
+    text-align: justify;
   }
   .article {
     .article-content_one {
-      padding: 2em;
+      padding: 1em;
+      text-align: justify;
     }
     .article-content_two {
-      padding: 2em;
+      padding: 1em;
+      text-align: justify;
     }
   }
   /*-----------------STEPS---------------*/
 
+  .steps-section {
+    margin: $uni-margin;
+    padding: 3em 1em 1em;
+  }
   .steps-section > div:first-of-type {
     text-align: center;
     padding: 0;
@@ -467,16 +478,35 @@
       font-family: $primary-font;
     }
   }
-  .token-desc {
-    h1 {
-      font-size: 2rem;
+
+  .benefits-con {
+    .benefits-desc {
+      padding: 0 1em;
     }
-    p {
-      font-size: 1.3rem;
+  }
+  .token-section {
+    display: block;
+
+    padding: 2rem 1rem 1rem 1rem;
+
+    .token-desc {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.3rem;
+      }
+      .buy-btn {
+        padding: 1em 3em !important;
+        font-size: 1rem !important;
+      }
     }
-    .buy-btn {
-      padding: 1em 3em !important;
-      font-size: 1rem !important;
+    .gold-img-con {
+      margin-right: 0rem;
+      width: 100%;
+      .gold-img {
+        width: 100%;
+      }
     }
   }
 }
