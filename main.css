@@ -542,6 +542,10 @@
     margin: 2em 0.8em;
     padding: 3em 1em 1em;
   }
+  .steps-section .steps span {
+    font-weight: bold;
+    font-size: 1em;
+  }
   .steps-section > div:first-of-type {
     text-align: center;
     padding: 0;
