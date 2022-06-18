@@ -296,6 +296,44 @@
   }
 }
 
+.token-dist {
+  margin: 4rem 4rem;
+  font-family: $primary-font;
+  font-weight: 500;
+  font-size: 0.9rem;
+  word-spacing: 0.3rem;
+  article {
+    .section-header {
+      font-family: $secondary-font;
+      margin: 3rem 0;
+      font-size: 3rem;
+      font-weight: 800;
+      color: #008c13;
+    }
+    .sub-header {
+      font-family: $secondary-font;
+      font-weight: 800;
+      font-size: 1.8rem;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  .break-down {
+    div {
+      display: flex;
+      justify-content: space-between;
+      line-height: 0.2;
+    }
+  }
+
+  .break-down :nth-child(even) {
+    background-color: #f2f4f7;
+  }
+  .second-dist {
+    min-width: 22.5rem;
+  }
+}
+
 /*--------------------------------*/
 /*--------------------------------*/
 /*--------------------------------*/
