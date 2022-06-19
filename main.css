@@ -315,12 +315,23 @@
   display: flex;
   justify-content: space-between;
   line-height: 0.2;
+  min-width: 22.5rem;
 }
 .token-dist .break-down :nth-child(even) {
   background-color: #f2f4f7;
 }
-.token-dist .second-dist {
-  min-width: 22.5rem;
+
+.community {
+  text-align: center;
+}
+.community p {
+  font-size: 1.2rem;
+}
+.community .social-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0 32%;
 }
 
 /*--------------------------------*/

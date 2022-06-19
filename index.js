@@ -21,3 +21,7 @@ function drawChart() {
   );
   chart.draw(data, options);
 }
+
+const currentDate = document.getElementById("current-year");
+const [, , year] = new Date().toLocaleDateString("en-US").split("/");
+currentDate.innerText = year;
