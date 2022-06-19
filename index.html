@@ -350,7 +350,7 @@
         </article>
       </section>
       <section class="community">
-        <h3>COMMUNITY</h3>
+        <h2>COMMUNITY</h2>
         <p>
           Join project community and be amongst the first to get a free
           smartstore
@@ -380,22 +380,23 @@
           </li>
         </ul>
       </section>
-      <form action="/action.php">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" value="Mike" /><br />
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" value="Walker" /><br />
-        <label for="lname">Subject:</label>
-        <input type="text" id="subject" value="Walker" /><br />
-        <label for="lname">Subject:</label>
-        <textarea id="txtid" name="txtname" rows="4" cols="50" maxlength="200">
-          A nice day is a nice day.
-          Lao Tseu
-          </textarea
+      <form action="/action.php" class="contact">
+        <h2>Support and partnership</h2>
+        <input type="text" id="fname" placeholder="First name" /><br />
+        <input type="text" id="lname" placeholder="Last name" /><br />
+        <input type="text" id="subject" placeholder="Subject" /><br />
+        <textarea
+          id="txtid"
+          name="txtname"
+          rows="4"
+          cols="50"
+          maxlength="200"
+          placeholder="Message..."
+        ></textarea
         ><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" class="submit" />
       </form>
-      <p>
+      <p class="copyright">
         Copyright © <span id="current-year"></span>
         <a href="www.turung.io">Turu Coin</a>. All rights reserved.
       </p>
