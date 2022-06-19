@@ -14,7 +14,7 @@ function drawChart() {
     ["Community and Daopad sales", 1],
   ]);
 
-  var options = { title: "Chart", width: 580, height: 420 };
+  var options = { title: "Chart", width: 650, height: 550 };
 
   var chart = new google.visualization.PieChart(
     document.getElementById("piechart")
