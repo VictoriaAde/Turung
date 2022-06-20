@@ -342,7 +342,7 @@
 
 .community {
   text-align: center;
-  padding: 3% 0;
+  padding: 18% 0;
   background-color: #f2f4f7;
 
   h2 {
@@ -359,6 +359,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
+    margin: 0 35%;
     padding-inline-start: 0;
   }
 }
@@ -649,6 +650,12 @@
       div {
         min-width: 0;
       }
+    }
+  }
+
+  .community {
+    .social-links {
+      margin: 0;
     }
   }
 
