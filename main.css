@@ -320,6 +320,10 @@
 .token-dist .break-down :nth-child(even) {
   background-color: #f2f4f7;
 }
+.token-dist #piechart {
+  margin: 0;
+  padding: 0;
+}
 
 .community {
   text-align: center;
@@ -328,9 +332,11 @@
 }
 .community h2 {
   font-family: "Courier Prime", monospace;
+  font-size: 2rem;
 }
 .community p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-family: "Raleway", sans-serif;
 }
 .community .social-links {
   display: flex;
@@ -348,6 +354,7 @@
   font-family: "Courier Prime", monospace;
   color: #fff;
   letter-spacing: 4px;
+  font-size: 2rem;
 }
 .contact input {
   width: 100%;
@@ -574,5 +581,28 @@
   }
   .token-section .gold-img-con .gold-img {
     width: 100%;
+  }
+
+  .token-dist {
+    padding: 1rem;
+    margin: 0;
+  }
+  .token-dist .top,
+.token-dist .next-to-top {
+    display: block;
+    max-width: 400px;
+  }
+  .token-dist .top .section-header,
+.token-dist .top .sub-header,
+.token-dist .next-to-top .section-header,
+.token-dist .next-to-top .sub-header {
+    text-align: center;
+  }
+  .token-dist .break-down div {
+    min-width: 0;
+  }
+
+  .contact {
+    padding: 15% 5%;
   }
 }/*# sourceMappingURL=main.css.map */

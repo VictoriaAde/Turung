@@ -330,6 +330,11 @@
   .break-down :nth-child(even) {
     background-color: #f2f4f7;
   }
+
+  #piechart {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .community {
@@ -339,10 +344,12 @@
 
   h2 {
     font-family: $secondary-font;
+    font-size: 2rem;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: $primary-font;
   }
 
   .social-links {
@@ -362,6 +369,7 @@
     font-family: $secondary-font;
     color: #fff;
     letter-spacing: 4px;
+    font-size: 2rem;
   }
 
   input {
@@ -615,5 +623,29 @@
         width: 100%;
       }
     }
+  }
+  .token-dist {
+    padding: 1rem;
+    margin: 0;
+    .top,
+    .next-to-top {
+      display: block;
+      max-width: 400px;
+
+      .section-header,
+      .sub-header {
+        text-align: center;
+      }
+    }
+
+    .break-down {
+      div {
+        min-width: 0;
+      }
+    }
+  }
+
+  .contact {
+    padding: 15% 5%;
   }
 }

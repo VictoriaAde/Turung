@@ -2,7 +2,7 @@ google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
-  var data = google.visualization.arrayToDataTable([
+  const data = google.visualization.arrayToDataTable([
     ["Token", "Percent"],
     ["Founders and Advisors", 14],
     ["Marketing and R$D", 25],
@@ -14,9 +14,12 @@ function drawChart() {
     ["Community and Daopad sales", 1],
   ]);
 
-  var options = { title: "Chart", width: 650, height: 550 };
+  const options =
+    window.innerWidth < 506
+      ? { title: "Chart", width: 450, height: 300 }
+      : { title: "Chart", width: 650, height: 550 };
 
-  var chart = new google.visualization.PieChart(
+  const chart = new google.visualization.PieChart(
     document.getElementById("piechart")
   );
   chart.draw(data, options);
