@@ -288,6 +288,10 @@
   border-radius: 10px;
 }
 
+.d-none {
+  display: none;
+}
+
 .token-dist {
   padding: 2rem 4rem;
   font-family: "Raleway", sans-serif;
