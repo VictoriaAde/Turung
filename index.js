@@ -16,7 +16,7 @@ function drawChart() {
 
   const options =
     window.innerWidth < 506
-      ? { title: "Chart", width: 450, height: 250 }
+      ? { title: "Chart", width: 418, height: 350 }
       : { title: "Chart representation", width: 650, height: 550 };
 
   const chart = new google.visualization.PieChart(
