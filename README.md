@@ -22,9 +22,8 @@ View the [live Demo page](https://www.turung.io/) here ☕
 ## Getting started
 
 1. [Clone the project](https://github.com/VictoriaAde/Turung.git)
-2. Installing the packages by running `npm install`
-3. On the cmd run `npm run build`
-4. Run `npm start`
+2. `cd Turung`
+4. Start with _Live Server_
 
 ### Prerequisites
 
