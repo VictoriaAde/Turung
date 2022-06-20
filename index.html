@@ -398,6 +398,13 @@
           placeholder="Last name"
         />
         <input
+          name="Email"
+          type="email"
+          id="email"
+          required
+          placeholder="Email"
+        />
+        <input
           name="Subject"
           type="text"
           id="subject"
@@ -416,11 +423,16 @@
           placeholder="Message..."
         ></textarea
         ><br />
-        <input type="submit" value="Submit" class="submit" />
+        <input
+          type="submit"
+          value="Submit"
+          class="submit"
+          onclick="ValidateEmail()"
+        />
       </form>
       <p class="copyright">
         Copyright © <span id="current-year"></span>
-        <a href="www.turung.io">Turu Coin</a>. All rights reserved.
+        <strong>Turung Technologies</strong>. All rights reserved.
       </p>
     </main>
     <script
