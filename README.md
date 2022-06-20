@@ -16,14 +16,13 @@ View the [live Demo page](https://www.turung.io/) here ☕
 
 - HTML5
 - CSS
-- Bootstrap
-- Webpack
+- SCSS/SASS
 
 ## Getting started
 
 1. [Clone the project](https://github.com/VictoriaAde/Turung.git)
 2. `cd Turung`
-4. Start with _Live Server_
+3. Start with _Live Server_
 
 ### Prerequisites
 
