@@ -345,7 +345,8 @@
   display: flex;
   list-style: none;
   justify-content: space-around;
-  margin: 0 32%;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .contact {
