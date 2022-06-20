@@ -289,7 +289,7 @@
 }
 
 .token-dist {
-  padding: 4rem;
+  padding: 2rem 4rem;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
@@ -321,8 +321,7 @@
   background-color: #f2f4f7;
 }
 .token-dist #piechart {
-  margin: 0;
-  padding: 0;
+  margin-left: -200px;
 }
 
 .community {
@@ -584,19 +583,23 @@
   }
 
   .token-dist {
-    padding: 1rem;
+    padding: 0.2rem 1rem;
     margin: 0;
   }
   .token-dist .top,
 .token-dist .next-to-top {
     display: block;
-    max-width: 400px;
+    max-width: 380px;
   }
   .token-dist .top .section-header,
 .token-dist .top .sub-header,
 .token-dist .next-to-top .section-header,
 .token-dist .next-to-top .sub-header {
     text-align: center;
+  }
+  .token-dist .top #piechart,
+.token-dist .next-to-top #piechart {
+    margin-left: -50px;
   }
   .token-dist .break-down div {
     min-width: 0;

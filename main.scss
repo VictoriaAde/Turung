@@ -297,7 +297,7 @@
 }
 
 .token-dist {
-  padding: 4rem;
+  padding: 2rem 4rem;
   font-family: $primary-font;
   font-weight: 500;
   font-size: 0.9rem;
@@ -332,8 +332,7 @@
   }
 
   #piechart {
-    margin: 0;
-    padding: 0;
+    margin-left: -200px;
   }
 }
 
@@ -625,16 +624,20 @@
     }
   }
   .token-dist {
-    padding: 1rem;
+    padding: 0.2rem 1rem;
     margin: 0;
     .top,
     .next-to-top {
       display: block;
-      max-width: 400px;
+      max-width: 380px;
 
       .section-header,
       .sub-header {
         text-align: center;
+      }
+
+      #piechart {
+        margin-left: -50px;
       }
     }
 

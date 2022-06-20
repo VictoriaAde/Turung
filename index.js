@@ -10,14 +10,14 @@ function drawChart() {
     ["Network", 10],
     ["Operation", 10],
     ["Liquidity", 20],
-    ["Staking", 15],
+    ["Staking", 10],
     ["Community and Daopad sales", 1],
   ]);
 
   const options =
     window.innerWidth < 506
-      ? { title: "Chart", width: 450, height: 300 }
-      : { title: "Chart", width: 650, height: 550 };
+      ? { title: "Chart", width: 450, height: 250 }
+      : { title: "Chart representation", width: 650, height: 550 };
 
   const chart = new google.visualization.PieChart(
     document.getElementById("piechart")
