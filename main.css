@@ -353,6 +353,7 @@
 .contact {
   padding: 5% 32%;
   background-color: #032830;
+  font-family: "Raleway", sans-serif;
 }
 .contact h2 {
   text-align: center;
@@ -360,6 +361,11 @@
   color: #fff;
   letter-spacing: 4px;
   font-size: 2rem;
+}
+.contact p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
 }
 .contact input {
   width: 100%;

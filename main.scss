@@ -367,6 +367,7 @@
 .contact {
   padding: 5% 32%;
   background-color: #032830;
+  font-family: $primary-font;
 
   h2 {
     text-align: center;
@@ -374,6 +375,12 @@
     color: #fff;
     letter-spacing: 4px;
     font-size: 2rem;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
   }
 
   input {
