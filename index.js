@@ -21,19 +21,37 @@ function drawChart() {
           title: "Chart representation",
           width: 650,
           height: 550,
-          colors: [
-            "#000",
-            "#e0440e",
-            "#f3b49f",
-            "#000",
-            "#e6693e",
-            "#000",
-            "#e6693e",
-            "#f6c7b6",
-            // "#000",
-            // "#ec8f6e",
-          ],
+          hAxis: {
+            textStyle: { color: "#FFF" },
+          },
+          backgroundColor: {
+            fill: "#09233E",
+            fillOpacity: 0.1,
+          },
+          // colors: [
+          //   "#e0440e",
+          //   "#f3b49f",
+          //   "#e6693e",
+          //   "#e0440e",
+          //   "#e6693e",
+          //   "#f6c7b6",
+          //   "#ec8f6e",
+          //   "#e0440e",
+          // ],
           is3D: true,
+          vAxis: {
+            textStyle: {
+              color: "#ffffff",
+            },
+          },
+          legend: {
+            textStyle: {
+              color: "#ffffff",
+            },
+          },
+          titleTextStyle: {
+            color: "#ffffff",
+          },
         };
 
   const chart = new google.visualization.PieChart(
