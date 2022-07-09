@@ -1,3 +1,5 @@
+// chart representation
+
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
@@ -17,7 +19,42 @@ function drawChart() {
   const options =
     window.innerWidth < 506
       ? { title: "Chart", width: 418, height: 350 }
-      : { title: "Chart representation", width: 650, height: 550 };
+      : {
+          title: "Chart representation",
+          width: 650,
+          height: 550,
+          hAxis: {
+            textStyle: { color: "#FFF" },
+          },
+          backgroundColor: {
+            fill: "#09233E",
+            fillOpacity: 0.1,
+          },
+          // colors: [
+          //   "#e0440e",
+          //   "#f3b49f",
+          //   "#e6693e",
+          //   "#e0440e",
+          //   "#e6693e",
+          //   "#f6c7b6",
+          //   "#ec8f6e",
+          //   "#e0440e",
+          // ],
+          is3D: true,
+          vAxis: {
+            textStyle: {
+              color: "#ffffff",
+            },
+          },
+          legend: {
+            textStyle: {
+              color: "#ffffff",
+            },
+          },
+          titleTextStyle: {
+            color: "#ffffff",
+          },
+        };
 
   const chart = new google.visualization.PieChart(
     document.getElementById("piechart")
@@ -28,3 +65,25 @@ function drawChart() {
 const currentDate = document.getElementById("current-year");
 const [, , year] = new Date().toLocaleDateString("en-US").split("/");
 currentDate.innerText = year;
+//
+
+// Read More
+const moreBtns = document.querySelectorAll(".more-btn");
+moreBtns.forEach((btn) => {
+  const [, , tag] = btn.id?.split("-") || "";
+  btn.addEventListener("click", () => changeClass(tag, btn));
+});
+
+function changeClass(tag, btnRef) {
+  const more = document.getElementById(`more-${tag}`);
+
+  if (more && btnRef) {
+    if (more.classList.contains("show")) {
+      btnRef.innerHTML = "read more";
+      more.classList.remove("show");
+    } else {
+      btnRef.innerHTML = "read less";
+      more.classList.add("show");
+    }
+  }
+}
