@@ -13,25 +13,37 @@ body {
 /*--------------NAV------------------*/
 #nav {
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em 2em 1em;
   margin: 0;
 }
 
 .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
+
 .nav-logo .nav-logo-img {
   width: 10%;
   border-radius: 50%;
 }
+
 .nav-logo .nav-logo-text {
   color: #0b335b;
   font-family: "Courier Prime", monospace;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1.8rem;
 }
 
@@ -45,11 +57,13 @@ body {
   font-weight: bold;
   font-family: "Raleway", sans-serif;
 }
+
 .nav-btn-con .nav-btn-1 {
   padding: 1em 2em;
   text-transform: uppercase;
   margin-right: 0.3em;
 }
+
 .nav-btn-con .nav-btn-2 {
   padding: 1em 1.5em;
   text-transform: capitalize;
@@ -60,17 +74,24 @@ body {
   background: #000;
   padding: 3em 6em;
 }
+
 .hero-con .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-bottom: 4em;
 }
+
 .hero-con .hero .hero-img {
   width: 30%;
 }
+
 .hero-con .hero .hero-descrip {
   text-align: center;
 }
+
 .hero-con .hero .hero-descrip h1 {
   color: #fa9917;
   font-family: "Courier Prime", monospace;
@@ -78,18 +99,21 @@ body {
   font-size: 5em;
   margin-bottom: 0;
 }
+
 .hero-con .hero .hero-descrip h2 {
   color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 .hero-con .hero .hero-descrip p {
   color: #99e5e8;
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 1.5rem;
 }
+
 .hero-con p {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -98,13 +122,18 @@ body {
 
 /*-----------------ARTICLE---------------*/
 .article .article-content_one {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 4fr 8fr;
-  align-items: center;
+  -ms-grid-columns: 4fr 8fr;
+      grid-template-columns: 4fr 8fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-gap: 1em;
   padding: 4em;
   text-align: justify;
 }
+
 .article .article-content_one .article-red-text {
   font-family: "Raleway", sans-serif;
   padding-top: 1 rem;
@@ -112,17 +141,26 @@ body {
   font-size: 1.5em;
   font-style: italic;
 }
+
 .article .article-content_two {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 8fr 4fr;
-  align-items: center;
+  -ms-grid-columns: 8fr 4fr;
+      grid-template-columns: 8fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-gap: 5em;
   padding: 4em;
   text-align: justify;
 }
+
 .article .article-content_two .turupay {
-  order: 9999;
+  -webkit-box-ordinal-group: 10000;
+      -ms-flex-order: 9999;
+          order: 9999;
 }
+
 .article h1 {
   text-transform: capitalize;
   font-size: 3rem;
@@ -131,10 +169,12 @@ body {
   font-weight: bolder;
   margin-left: 1em;
 }
+
 .article h1 span {
   border-bottom: solid 5px;
   line-height: 1px;
 }
+
 .article p {
   color: #fff;
   font-family: "Raleway", sans-serif;
@@ -142,17 +182,19 @@ body {
   font-weight: bold;
 }
 
-/*----------------STEPS----------------*/
+/*----------------How it works----------------*/
 .how_it_works-section > div:first-of-type {
   text-align: center;
   padding: 2em 0;
 }
+
 .how_it_works-section > div:first-of-type h1 {
   font-family: "Courier Prime", monospace;
   font-size: 3rem;
   padding: 0 5em;
   color: #fa9917;
 }
+
 .how_it_works-section > div:first-of-type p {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
@@ -163,108 +205,169 @@ body {
   padding: 0em 3em 1em;
   color: white;
 }
+
 .how_it_works-section p {
   font-size: 1.3rem;
 }
-.how_it_works-section .how_it_works span {
-  font-weight: bold;
+
+.how_it_works-section .how_it_works .step-bold {
   font-size: 1.3em;
+}
+
+.more-btn {
+  display: none;
+  cursor: pointer;
 }
 
 .benefits-con {
   padding: 2em 1em 4em;
   margin: 2em 0.8em;
 }
+
 .benefits-con .benefits-desc {
   text-align: center;
   padding: 0 3em;
   margin-bottom: 4rem;
 }
+
 .benefits-con .benefits-desc h1 {
   font-family: "Courier Prime", monospace;
   font-weight: bold;
   font-size: 3.5rem;
   color: #fa9917;
 }
+
 .benefits-con .benefits-desc p {
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   color: white;
 }
+
 .benefits-con .benefits {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "benefit-one benefit-three benefit-four" "benefit-two benefit-three benefit-five";
+      grid-template-areas: "benefit-one benefit-three benefit-four" "benefit-two benefit-three benefit-five";
   grid-auto-columns: 1fr;
   gap: 1.5rem;
 }
+
 .benefits-con .benefits img {
   width: 30%;
 }
+
 .benefits-con .benefits .benefit {
   padding: 1em 1em;
   font-size: 1.3rem;
   border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .benefits-con .benefits .benefit .benefit-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 2em;
 }
+
 .benefits-con .benefits .benefit-one {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: benefit-one;
 }
+
 .benefits-con .benefits .benefit-two {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: benefit-two;
 }
+
 .benefits-con .benefits .benefit-three {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: benefit-three;
 }
+
 .benefits-con .benefits .benefit-three img {
   width: 40%;
 }
+
 .benefits-con .benefits .benefit-four {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: benefit-four;
 }
+
 .benefits-con .benefits .benefit-five {
   background-color: #09233e;
   color: #fff;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: benefit-five;
 }
 
 .token-section {
   background-color: #000;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 2em 0.8em;
   padding: 2rem 6rem 2rem 2rem;
 }
+
 .token-section .gold-img-con {
   margin-right: 2rem;
   width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .token-section .gold-img-con .gold-img {
   width: 100%;
 }
+
 .token-section .token-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: justify;
 }
+
 .token-section .token-desc h1 {
   font-weight: bold;
   font-family: "Courier Prime", monospace;
@@ -273,19 +376,23 @@ body {
   text-align: center;
   color: #fa9917;
 }
+
 .token-section .token-desc p {
   color: #fff;
   font-size: 1.3rem;
   margin-bottom: 1rem;
   font-family: "Raleway", sans-serif;
 }
+
 .token-section .token-desc span.turung-bold {
   font-weight: bold;
 }
+
 .token-section .token-desc .buy-btn-con {
   margin: 3em 0;
   text-align: center;
 }
+
 .token-section .token-desc .buy-btn-con .buy-btn {
   text-transform: uppercase;
   background: #0b335b;
@@ -293,7 +400,7 @@ body {
   padding: 1rem 5rem;
   text-decoration: none;
   font-size: 2rem;
-  border: double 2px rgba(116, 193, 0, 0.8196078431);
+  border: double 2px #74c100d1;
   border-radius: 10px;
 }
 
@@ -302,18 +409,24 @@ body {
 }
 
 .token-dist {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: black;
+  color: white;
   padding: 2rem 4rem;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   word-spacing: 0.3rem;
 }
+
 .token-dist article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .token-dist article .section-header {
   font-family: "Courier Prime", monospace;
   margin: 3rem 0;
@@ -321,20 +434,28 @@ body {
   font-weight: 800;
   color: #008c13;
 }
+
 .token-dist article .sub-header {
   font-family: "Courier Prime", monospace;
   font-weight: 800;
   font-size: 1.8rem;
 }
+
 .token-dist .break-down div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   line-height: 0.8;
   min-width: 35rem;
 }
+
 .token-dist .break-down :nth-child(even) {
   font-weight: bold;
 }
+
 .token-dist #piechart {
   margin-left: -200px;
 }
@@ -345,18 +466,24 @@ body {
   background-color: #000;
   color: #fff;
 }
+
 .community h2 {
   font-family: "Courier Prime", monospace;
   font-size: 2rem;
 }
+
 .community p {
   font-size: 1.3rem;
   font-family: "Raleway", sans-serif;
 }
+
 .community .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 35%;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
@@ -367,6 +494,7 @@ body {
   background-color: #032830;
   font-family: "Raleway", sans-serif;
 }
+
 .contact h2 {
   text-align: center;
   font-family: "Courier Prime", monospace;
@@ -374,11 +502,13 @@ body {
   letter-spacing: 4px;
   font-size: 2rem;
 }
+
 .contact p {
   color: #fff;
   text-align: center;
   font-size: 1.2rem;
 }
+
 .contact input {
   width: 100%;
   height: 1.8rem;
@@ -387,6 +517,7 @@ body {
   font-size: 1rem;
   border: 2px solid #fa9917;
 }
+
 .contact textarea {
   width: 100%;
   height: 8rem;
@@ -394,6 +525,7 @@ body {
   font-size: 1rem;
   border: 2px solid #fa9917;
 }
+
 .contact .submit {
   max-width: 40%;
   background-color: #000;
@@ -421,8 +553,11 @@ body {
 @media (max-width: 1100px) {
   /*---------------HERO-----------------*/
   .hero-con .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-bottom: 4em;
   }
   .hero-con .hero .hero-img {
@@ -444,14 +579,14 @@ body {
   .hero-con .hero p {
     font-size: 1rem;
   }
-
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
   .steps-section > div:first-of-type h1 {
     font-family: "Courier Prime", monospace;
     font-size: 2.5rem;
     padding: 0 3em;
   }
 }
+
 /*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 906px) {
@@ -469,7 +604,6 @@ body {
   #nav .nav-btn-con .nav-btn-2 {
     padding: 0.6em 1em;
   }
-
   /*---------------HERO-----------------*/
   .hero-con .hero {
     display: block;
@@ -492,14 +626,12 @@ body {
   .hero-con .hero p {
     font-size: 1rem;
   }
-
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
   .steps-section > div:first-of-type h1 {
     font-family: "Courier Prime", monospace;
     font-size: 2.3rem;
     padding: 0 3em;
   }
-
   /*-----------------ARTICLE---------------*/
   .article .article-content_one {
     display: block;
@@ -514,7 +646,9 @@ body {
     text-align: center;
   }
   .article .article-content_two .turupay {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .article h1 {
     font-size: 3rem;
@@ -523,14 +657,24 @@ body {
   .article p {
     font-size: 1.1em;
   }
-
   .benefits {
-    grid-template-areas: "benefit-one" "benefit-two" "benefit-three" "benefit-four" "benefit-five" !important;
+        grid-template-areas: "benefit-one" "benefit-two" "benefit-three" "benefit-four" "benefit-five" !important;
   }
   .benefits img {
     width: 25% !important;
   }
+  .more {
+    display: none;
+  }
+  #more-btn {
+    display: inline;
+    color: #fa9917;
+  }
+  .show {
+    display: inline !important;
+  }
 }
+
 /*--------------------------------*/
 /*--------------------------------*/
 @media (max-width: 506px) {
@@ -541,13 +685,11 @@ body {
     width: 20%;
     border-radius: 50%;
   }
-
   /*---------------HERO-----------------*/
   .hero-con {
     padding: 3em 1.5em;
     text-align: justify;
   }
-
   .article .article-content_one {
     padding: 1em;
     text-align: justify;
@@ -556,8 +698,7 @@ body {
     padding: 1em;
     text-align: justify;
   }
-
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
   .steps-section {
     margin: 2em 0.8em;
     padding: 3em 1em 1em;
@@ -566,7 +707,6 @@ body {
     font-weight: bold;
     font-size: 1em;
   }
-
   .steps-section > div:first-of-type {
     text-align: center;
     padding: 0;
@@ -580,11 +720,9 @@ body {
     font-size: 1.2rem;
     font-family: "Raleway", sans-serif;
   }
-
   .benefits-con .benefits-desc {
     padding: 0 1em;
   }
-
   .token-section {
     display: block;
     padding: 2rem 1rem 1rem 1rem;
@@ -606,35 +744,33 @@ body {
   .token-section .gold-img-con .gold-img {
     width: 100%;
   }
-
   .token-dist {
     padding: 0.2rem 1rem;
     margin: 0;
   }
   .token-dist .top,
-.token-dist .next-to-top {
+  .token-dist .next-to-top {
     display: block;
     max-width: 380px;
   }
   .token-dist .top .section-header,
-.token-dist .top .sub-header,
-.token-dist .next-to-top .section-header,
-.token-dist .next-to-top .sub-header {
+  .token-dist .top .sub-header,
+  .token-dist .next-to-top .section-header,
+  .token-dist .next-to-top .sub-header {
     text-align: center;
   }
   .token-dist .top #piechart,
-.token-dist .next-to-top #piechart {
+  .token-dist .next-to-top #piechart {
     margin-left: -67px;
   }
   .token-dist .break-down div {
     min-width: 0;
   }
-
   .community .social-links {
     margin: 0;
   }
-
   .contact {
     padding: 15% 5%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+// chart representation
+
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 
@@ -63,3 +65,45 @@ function drawChart() {
 const currentDate = document.getElementById("current-year");
 const [, , year] = new Date().toLocaleDateString("en-US").split("/");
 currentDate.innerText = year;
+//
+
+// Read More
+
+const moreBtn = document.querySelector(".more-btn");
+moreBtn.addEventListener("click", changeClass);
+
+// const moreBtn = document.querySelector(
+//   forEach((more) => {
+//     more.addEventListener("click", changeClass);
+//   })
+// );
+
+function changeClass() {
+  const moreStepThree = document.getElementById("more-three");
+  const moreStepSix = document.getElementById("more-six");
+  // moreText.classList.toggle("show");
+
+  // const buttonText = moreText.classList.contains("show")
+  //   ? "read less"
+  //   : "read more";
+
+  // step three
+  if (moreStepThree.classList.contains("show")) {
+    moreBtn.innerHTML = "read more";
+    moreStepThree.classList.remove("show");
+  } else {
+    moreBtn.innerHTML = "read less";
+    moreStepThree.classList.add("show");
+  }
+  //step six
+  if (moreStepSix.classList.contains("show")) {
+    moreBtn.innerHTML = "read more";
+    moreStepSix.classList.remove("show");
+  } else {
+    moreBtn.innerHTML = "read less";
+    moreStepSix.classList.add("show");
+  }
+  // moreBtn.forEach((btnText) => {
+  //   btnText.innerHTML = buttonText;
+  // });
+}

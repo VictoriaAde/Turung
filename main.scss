@@ -9,6 +9,7 @@ body {
   height: 100vh;
   padding: 0;
 }
+
 /*--------------NAV------------------*/
 #nav {
   background-color: $white;
@@ -145,7 +146,7 @@ body {
   }
 }
 
-/*----------------STEPS----------------*/
+/*----------------How it works----------------*/
 .how_it_works-section > div:first-of-type {
   text-align: center;
   padding: 2em 0;
@@ -168,12 +169,16 @@ body {
     font-size: 1.3rem;
   }
   .how_it_works {
-    span {
-      font-weight: bold;
+    .step-bold {
       font-size: 1.3em;
     }
   }
 }
+.more-btn {
+  display: none;
+  cursor: pointer;
+}
+
 .benefits-con {
   padding: 2em 1em 4em;
   margin: $uni-margin;
@@ -466,7 +471,7 @@ body {
       }
     }
   }
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
   .steps-section > div:first-of-type h1 {
     font-family: $secondary-font;
     font-size: 2.5rem;
@@ -520,7 +525,7 @@ body {
     }
   }
 
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
   .steps-section > div:first-of-type h1 {
     font-family: $secondary-font;
     font-size: 2.3rem;
@@ -563,6 +568,16 @@ body {
       width: 25% !important;
     }
   }
+  .more {
+    display: none;
+  }
+  #more-btn {
+    display: inline;
+    color: $secondary-color;
+  }
+  .show {
+    display: inline !important;
+  }
 }
 
 /*--------------------------------*/
@@ -592,7 +607,7 @@ body {
       text-align: justify;
     }
   }
-  /*-----------------STEPS---------------*/
+  /*-----------------how it works---------------*/
 
   .steps-section {
     margin: $uni-margin;
