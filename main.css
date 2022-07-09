@@ -580,7 +580,7 @@ body {
     font-size: 1rem;
   }
   /*-----------------how it works---------------*/
-  .steps-section > div:first-of-type h1 {
+  .how_it_works-section > div:first-of-type h1 {
     font-family: "Courier Prime", monospace;
     font-size: 2.5rem;
     padding: 0 3em;
@@ -627,7 +627,7 @@ body {
     font-size: 1rem;
   }
   /*-----------------how it works---------------*/
-  .steps-section > div:first-of-type h1 {
+  .how_it_works-section > div:first-of-type h1 {
     font-family: "Courier Prime", monospace;
     font-size: 2.3rem;
     padding: 0 3em;
@@ -699,24 +699,24 @@ body {
     text-align: justify;
   }
   /*-----------------how it works---------------*/
-  .steps-section {
+  .how_it_works-section {
     margin: 2em 0.8em;
     padding: 3em 1em 1em;
   }
-  .steps-section .steps span {
+  .how_it_works-section .how_it_works span {
     font-weight: bold;
     font-size: 1em;
   }
-  .steps-section > div:first-of-type {
+  .how_it_works-section > div:first-of-type {
     text-align: center;
     padding: 0;
   }
-  .steps-section > div:first-of-type h1 {
+  .how_it_works-section > div:first-of-type h1 {
     font-family: "Courier Prime", monospace;
     font-size: 2rem;
     padding: 0;
   }
-  .steps-section > div:first-of-type p {
+  .how_it_works-section > div:first-of-type p {
     font-size: 1.2rem;
     font-family: "Raleway", sans-serif;
   }

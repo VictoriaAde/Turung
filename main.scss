@@ -472,7 +472,7 @@ body {
     }
   }
   /*-----------------how it works---------------*/
-  .steps-section > div:first-of-type h1 {
+  .how_it_works-section > div:first-of-type h1 {
     font-family: $secondary-font;
     font-size: 2.5rem;
     padding: 0 3em;
@@ -526,7 +526,7 @@ body {
   }
 
   /*-----------------how it works---------------*/
-  .steps-section > div:first-of-type h1 {
+  .how_it_works-section > div:first-of-type h1 {
     font-family: $secondary-font;
     font-size: 2.3rem;
     padding: 0 3em;
@@ -609,17 +609,17 @@ body {
   }
   /*-----------------how it works---------------*/
 
-  .steps-section {
+  .how_it_works-section {
     margin: $uni-margin;
     padding: 3em 1em 1em;
-    .steps {
+    .how_it_works {
       span {
         font-weight: bold;
         font-size: 1em;
       }
     }
   }
-  .steps-section > div:first-of-type {
+  .how_it_works-section > div:first-of-type {
     text-align: center;
     padding: 0;
     h1 {
