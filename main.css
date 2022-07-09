@@ -666,7 +666,7 @@ body {
   .more {
     display: none;
   }
-  #more-btn {
+  .more-btn {
     display: inline;
     color: #fa9917;
   }

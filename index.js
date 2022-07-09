@@ -68,42 +68,22 @@ currentDate.innerText = year;
 //
 
 // Read More
+const moreBtns = document.querySelectorAll(".more-btn");
+moreBtns.forEach((btn) => {
+  const [, , tag] = btn.id?.split("-") || "";
+  btn.addEventListener("click", () => changeClass(tag, btn));
+});
 
-const moreBtn = document.querySelector(".more-btn");
-moreBtn.addEventListener("click", changeClass);
+function changeClass(tag, btnRef) {
+  const more = document.getElementById(`more-${tag}`);
 
-// const moreBtn = document.querySelector(
-//   forEach((more) => {
-//     more.addEventListener("click", changeClass);
-//   })
-// );
-
-function changeClass() {
-  const moreStepThree = document.getElementById("more-three");
-  const moreStepSix = document.getElementById("more-six");
-  // moreText.classList.toggle("show");
-
-  // const buttonText = moreText.classList.contains("show")
-  //   ? "read less"
-  //   : "read more";
-
-  // step three
-  if (moreStepThree.classList.contains("show")) {
-    moreBtn.innerHTML = "read more";
-    moreStepThree.classList.remove("show");
-  } else {
-    moreBtn.innerHTML = "read less";
-    moreStepThree.classList.add("show");
+  if (more && btnRef) {
+    if (more.classList.contains("show")) {
+      btnRef.innerHTML = "read more";
+      more.classList.remove("show");
+    } else {
+      btnRef.innerHTML = "read less";
+      more.classList.add("show");
+    }
   }
-  //step six
-  if (moreStepSix.classList.contains("show")) {
-    moreBtn.innerHTML = "read more";
-    moreStepSix.classList.remove("show");
-  } else {
-    moreBtn.innerHTML = "read less";
-    moreStepSix.classList.add("show");
-  }
-  // moreBtn.forEach((btnText) => {
-  //   btnText.innerHTML = buttonText;
-  // });
 }
