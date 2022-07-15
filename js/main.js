@@ -175,10 +175,10 @@ jQuery(document).ready(function ($) {
     loop: true,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
       768: {
-        items: 4,
+        items: 2,
       },
       900: {
         items: 3,
@@ -204,4 +204,25 @@ jQuery(document).ready(function ($) {
   const currentDate = document.getElementById("current-year");
   const [, , year] = new Date().toLocaleDateString("en-US").split("/");
   currentDate.innerText = year;
+
+  // Read More
+  const moreBtns = document.querySelectorAll(".more-btn");
+  moreBtns.forEach((btn) => {
+    const [, , tag] = btn.id?.split("-") || "";
+    btn.addEventListener("click", () => changeClass(tag, btn));
+  });
+
+  function changeClass(tag, btnRef) {
+    const more = document.getElementById(`more-${tag}`);
+
+    if (more && btnRef) {
+      if (more.classList.contains("show")) {
+        btnRef.innerHTML = " Read more...";
+        more.classList.remove("show");
+      } else {
+        btnRef.innerHTML = " Read less...";
+        more.classList.add("show");
+      }
+    }
+  }
 });
