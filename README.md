@@ -17,6 +17,7 @@ View the [live Demo page](https://www.turung.io/) here ☕
 - HTML5
 - CSS
 - SCSS/SASS
+- Bootstrap
 
 ## Getting started
 
@@ -44,6 +45,13 @@ Load the page and enjoy!
 - GitHub: [brytebee](https://github.com/brytebee)
 - Twitter: [@brytebee](https://twitter.com/brytebee)
 - LinkedIn: [brytebee](https://www.linkedin.com/in/brytebee/)
+
+### Contributor
+
+👤 **Faithronnels Oguche**
+
+- GitHub: [Faithronnels](https://github.com/faithronnels)
+- LinkedIn: [faithronnels-oguche](https://www.linkedin.com/in/faithronnels-oguche-6113b7153/)
 
 ## 🤝 Contributing
 
