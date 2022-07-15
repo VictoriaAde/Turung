@@ -1154,6 +1154,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .credits a {
   color: #0b335b;
 }
+@media (max-width: 991.98px) {
+  .social-media-div {
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 768px) {
   .intro {
     width: 100%;
@@ -1162,9 +1168,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: url(../assets//images/background.png) no-repeat;
     background-size: cover;
   }
-}
-
-@media (min-width: 768px) {
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1227,9 +1230,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   .about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
-  }
-  .social-media-div {
-    margin: 0 auto;
   }
 }
 
