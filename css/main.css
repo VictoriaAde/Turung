@@ -453,7 +453,7 @@ a.buy-button:active {
 }
 
 #mobile-nav-toggle i {
-  color: #555;
+  color: #0b335b;
 }
 
 /* Mobile Nav Styling */
@@ -464,7 +464,7 @@ a.buy-button:active {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
+  background: #0b335bb8;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -480,7 +480,11 @@ a.buy-button:active {
 #mobile-nav ul li {
   position: relative;
 }
-
+#mobile-nav ul li:hover,
+#mobile-nav ul li a:hover {
+  color: #5edae8;
+  background-color: #092a4b;
+}
 #mobile-nav ul li a {
   color: #fff;
   font-size: 16px;
@@ -598,7 +602,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* margin-left: -15px; */
   max-width: 100%;
   height: auto;
- max-width: 300px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
