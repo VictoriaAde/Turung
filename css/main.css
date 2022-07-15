@@ -3,7 +3,9 @@ body {
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
-
+.font-p {
+  font-size: 16px;
+}
 a {
   color: #5edae8;
   transition: 0.5s;
@@ -39,6 +41,9 @@ h6 {
 .bg-grey {
   background-color: #f6f6f6;
 }
+.bg-white {
+  background-color: #fff;
+}
 .fnt-teal {
   color: #5edae8;
 }
@@ -51,8 +56,9 @@ h6 {
 .fnt-dark-grey {
   color: #979797;
 }
+
 .fnt-darker-grey {
-  color: #565555;
+  color: #555555;
 }
 .portfolio-div {
   width: 100%;
@@ -1138,7 +1144,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 .footer {
-  background: #fff;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -1204,7 +1209,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   .back-to-top {
     bottom: 15px;
   }
-
+  .font-p {
+    font-size: 12px;
+  }
   #header {
     padding: 20px 0;
     height: 74px;
