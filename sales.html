@@ -1,51 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="Token sale page" />
-
-    <title>Token sale</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Turung | Token sale</title>
 
     <script>
       var test = false; // False if contracts are on Mainnet
       var contractAddressSale = "0x415E3C263A14309400d59E7c09D64fAb51412CC2";
       var contractAddressToken = "0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563";
     </script>
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://user-images.githubusercontent.com/27709832/164998130-43799d3c-4fda-44b3-96ef-4c352f4d5681.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Turung is an online smartstore that allows traditional brick and
+     mortar stores provide crypto-fiat liquidity through a decentralized
+     payment system called TURUpay."
+    />
+    <meta
+      name="authors"
+      content="Victoria Ade | Atsighi Bright | Faithronnels Oguche"
+    />
+    <!-- Favicons -->
+    <link href="./assets//favicon/favicon-16x16.png" rel="icon" />
+    <link href="./assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/main.css" rel="stylesheet" />
     <style>
-      body {
+      /* body {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         color: #ffffff;
         background-color: #000000;
         font-size: 16px;
         font-weight: 400;
-      }
+      } */
 
-      h1 {
+      /* h1 {
         font-size: 24px;
         font-weight: 700;
       }
       h2 {
         font-size: 22px;
         font-weight: 500;
-      }
+      } */
 
       .small {
         font-size: 12px;
       }
 
       .err {
-        color: red;
+        color: #c46200;
       }
 
       .green {
-        color: green;
+        color: rgb(5, 113, 5);
       }
 
       .blue {
-        color: blue;
+        color: #5edae8;
       }
 
       * {
@@ -69,7 +110,7 @@
         color: #c0c0c0;
       }
 
-      button {
+      /* button {
         background-color: #283747;
         border: none;
         border-radius: 2px;
@@ -85,7 +126,7 @@
 
       button:hover {
         background-color: #008000;
-      }
+      } */
 
       button[disabled] {
         opacity: 0.6;
@@ -109,147 +150,222 @@
     </style>
   </head>
 
-  <body>
-    <div style="text-align: center">
-      <button id="connect" style="font-size: 12px">Connect</button>
-      <button class="switch" id="addMainBSC" style="font-size: 12px">
-        To BSC Mainnet
-      </button>
-      <span id="nometamask" class="err" style="display: none"
-        >Please install Metamask first...</span
-      >
-      <div class="network small">
-        <span id="curnet"
-          ><span class="err"
-            >Please use DApp browser/extension (e.g.
-            <a target="_blank" href="https://metamask.io">Metamask</a>)</span
-          ></span
-        >
-        <span id="myAddr"></span>
+  <body id="body" class="bg-black fnt-light-grey">
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left d-flex">
+          <img
+            src="./assets/favicon/favicon-32x32.png"
+            width="100%"
+            height="100%"
+            alt="turung logo"
+            class=""
+          />
+          <h1>
+            <a href="#body" class="scrollto">Turung</a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a> -->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li>
+              <a href="./index.html#about">Explore </a>
+            </li>
+            <li>
+              <a href="./assets/files/turung_whitepaper.pdf" target="_blank"
+                >Whitepaper</a
+              >
+            </li>
+
+            <li><a href="./index.html#contact">Contact</a></li>
+            <li>
+              <!-- <a
+                href="https://bscscan.com/token/0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563"
+                target="_blank"
+                >Buy TXPR</a
+              > -->
+              <a href="./sales.html" target="_blank">Buy TXPR</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
       </div>
-    </div>
+    </header>
+    <!-- #header -->
+    <section class="about">
+      <div class="">
+        <div style="text-align: center">
+          <button id="connect" style="font-size: 12px" class="sale-button">
+            Connect
+          </button>
+          <button
+            class="switch sale-button"
+            id="addMainBSC"
+            style="font-size: 12px"
+          >
+            To BSC Mainnet
+          </button>
+          <span id="nometamask" class="err" style="display: none"
+            >Please install Metamask first...</span
+          >
+          <div class="network small">
+            <span id="curnet"
+              ><span class="err"
+                >Please use DApp browser/extension (e.g.
+                <a target="_blank" href="https://metamask.io">Metamask</a
+                >)</span
+              ></span
+            >
+            <span id="myAddr"></span>
+          </div>
+        </div>
 
-    <div style="text-align: center">
-      <h1>Token info</h1>
-      <h2>
-        <span id="tokenName">Turu Token</span> (<span class="tokenSymbol"
-          >TXPR</span
-        >)
-      </h2>
-      <p>
-        <a
-          target="_blank"
-          href="https://bscscan.com/token/0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563"
-          id="tokenAddress"
-          >0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563</a
-        >
-      </p>
-      <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
-      <p>Do not send BNB to the token contract!</p>
-      <p>
-        <button id="addToken" style="text-align: center">
-          Add to Metamask
-        </button>
-        <button id="copyToken" style="text-align: center">Copy address</button>
-      </p>
-    </div>
+        <div style="text-align: center">
+          <h1>Token info</h1>
+          <h2>
+            <span id="tokenName">Turu Token</span> (<span class="tokenSymbol"
+              >TXPR</span
+            >)
+          </h2>
+          <p>
+            <a
+              target="_blank"
+              href="https://bscscan.com/token/0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563"
+              id="tokenAddress"
+              >0x48D67C9Df3E6c8a00c371D21701fFffB5e0f2563</a
+            >
+          </p>
+          <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
+          <p>Do not send BNB to the token contract!</p>
+          <p>
+            <button
+              id="addToken"
+              style="text-align: center"
+              class="sale-button"
+            >
+              Add to Metamask
+            </button>
+            <button
+              id="copyToken"
+              style="text-align: center"
+              class="sale-button"
+            >
+              Copy address
+            </button>
+          </p>
+        </div>
 
-    <hr />
+        <hr />
 
-    <div style="text-align: center">
-      <h1>Token sale status</h1>
-      <h1>
-        <span id="finished" style="display: none" class="status green"
-          >Finished</span
-        >
-        <span id="addtokens" style="display: none" class="status err"
-          ><br />Ask token sale admin to approve token sale contract or check
-          tokens balance on the wallet!</span
-        >
-        <span id="active" style="display: none" class="status green"
-          >Active</span
-        >
-      </h1>
-      <p>
-        <progress
-          id="progress"
-          value="0"
-          max="100"
-          style="width: 70%"
-        ></progress>
-      </p>
-      <p>
-        Raised: <span id="raised"></span> of
-        <span class="hardcap">2905.456</span> BNB
-      </p>
-      <p>
-        Tokens sold: <span id="sold"></span> of
-        <span class="saleqty">9999998.4608</span>
-        <span class="tokenSymbol">TXPR</span>
-      </p>
-      <p>
-        Remaining: <span id="toraise"></span> BNB (~ <span id="unsold"></span>
-        <span class="tokenSymbol">TXPR</span>)
-      </p>
-    </div>
-    <hr />
+        <div style="text-align: center">
+          <h1>Token sale status</h1>
+          <h1>
+            <span id="finished" style="display: none" class="status green"
+              >Finished</span
+            >
+            <span id="addtokens" style="display: none" class="status err"
+              ><br />Ask token sale admin to approve token sale contract or
+              check tokens balance on the wallet!</span
+            >
+            <span id="active" style="display: none" class="status green"
+              >Active</span
+            >
+          </h1>
+          <p>
+            <progress
+              id="progress"
+              value="0"
+              max="100"
+              style="width: 70%"
+            ></progress>
+          </p>
+          <p>
+            Raised: <span id="raised"></span> of
+            <span class="hardcap">2905.456</span> BNB
+          </p>
+          <p>
+            Tokens sold: <span id="sold"></span> of
+            <span class="saleqty">9999998.4608</span>
+            <span class="tokenSymbol">TXPR</span>
+          </p>
+          <p>
+            Remaining: <span id="toraise"></span> BNB (~
+            <span id="unsold"></span> <span class="tokenSymbol">TXPR</span>)
+          </p>
+        </div>
+        <hr />
 
-    <div style="text-align: center">
-      <h1>Buy tokens</h1>
-      <p>
-        1 BNB = <span class="rate">3441.8</span>
-        <span class="tokenSymbol">TXPR</span>
-      </p>
-      <p><input type="number" id="buyAmount" value="0" min="0" /> BNB</p>
-      <p>
-        You get: <span id="get">0</span> <span class="tokenSymbol">TXPR</span>
-      </p>
-      <p><button id="buyBtn" style="text-align: center">Buy</button></p>
-      <p>
-        In my wallet: <span id="myTokens"></span>
-        <span class="tokenSymbol">TXPR</span>
-      </p>
-    </div>
-    <hr />
+        <div style="text-align: center">
+          <h1>Buy tokens</h1>
+          <p>
+            1 BNB = <span class="rate">3441.8</span>
+            <span class="tokenSymbol">TXPR</span>
+          </p>
+          <p><input type="number" id="buyAmount" value="0" min="0" /> BNB</p>
+          <p>
+            You get: <span id="get">0</span>
+            <span class="tokenSymbol">TXPR</span>
+          </p>
+          <p>
+            <button id="buyBtn" style="text-align: center" class="sale-button">
+              Buy
+            </button>
+          </p>
+          <p>
+            In my wallet: <span id="myTokens"></span>
+            <span class="tokenSymbol sale-button">TXPR</span>
+          </p>
+        </div>
+        <hr />
 
-    <div style="text-align: center">
-      <h1>Token sale information</h1>
-      <p>
-        Hardcap: <span class="hardcap">2905.456</span> BNB (~
-        <span class="saleqty">9999998.4608</span>
-        <span class="tokenSymbol">TXPR</span>)
-      </p>
-      <p>
-        Rate: 1 BNB = <span class="rate">3441.8</span>
-        <span class="tokenSymbol">TXPR</span> (~
-        <span class="price">0.0002905456447207856</span> BNB/<span
-          class="tokenSymbol"
-          >TXPR</span
-        >)
-      </p>
-    </div>
-    <hr />
+        <div style="text-align: center">
+          <h1>Token sale information</h1>
+          <p>
+            Hardcap: <span class="hardcap">2905.456</span> BNB (~
+            <span class="saleqty">9999998.4608</span>
+            <span class="tokenSymbol">TXPR</span>)
+          </p>
+          <p>
+            Rate: 1 BNB = <span class="rate">3441.8</span>
+            <span class="tokenSymbol">TXPR</span> (~
+            <span class="price">0.0002905456447207856</span> BNB/<span
+              class="tokenSymbol"
+              >TXPR</span
+            >)
+          </p>
+        </div>
+        <hr />
 
-    <div style="text-align: center">
-      <h1>Sale contract</h1>
-      <p>
-        You can also buy tokens by sending BNB directly from your wallet to this
-        contract<br />
-        (please increase gas limit to 200,000 or even more for tokens with
-        special functions like autoLP, swaps, etc.)
-      </p>
-      <p>
-        <a
-          href="https://bscscan.com/address/0x415E3C263A14309400d59E7c09D64fAb51412CC2"
-          target="_blank"
-          id="saleAddress"
-          >0x415E3C263A14309400d59E7c09D64fAb51412CC2</a
-        >
-        <button id="copySale" style="text-align: center">Copy address</button>
-      </p>
-      <div style="text-align: center" id="saleqr"></div>
-    </div>
-    <hr />
+        <div style="text-align: center">
+          <h1>Sale contract</h1>
+          <p>
+            You can also buy tokens by sending BNB directly from your wallet to
+            this contract<br />
+            (please increase gas limit to 200,000 or even more for tokens with
+            special functions like autoLP, swaps, etc.)
+          </p>
+          <p>
+            <a
+              href="https://bscscan.com/address/0x415E3C263A14309400d59E7c09D64fAb51412CC2"
+              target="_blank"
+              id="saleAddress"
+              >0x415E3C263A14309400d59E7c09D64fAb51412CC2</a
+            >
+            <button
+              id="copySale"
+              style="text-align: center"
+              class="sale-button"
+            >
+              Copy address
+            </button>
+          </p>
+          <div style="text-align: center" id="saleqr"></div>
+        </div>
+        <hr />
+      </div>
+    </section>
 
     <script
       src="https://dappbuilder.org/js/jquery-3.6.0.min.js"

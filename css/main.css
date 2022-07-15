@@ -62,7 +62,8 @@ h6 {
   width: 200px;
 }
 
-a.buy-button {
+a.buy-button,
+.sale-button {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -78,7 +79,9 @@ a.buy-button {
 }
 
 a.buy-button:hover,
-a.buy-button:active {
+a.buy-button:active,
+.sale-button:hover,
+.sale-button:active {
   background: transparent;
   border: 2px solid #c46200;
   color: #c46200;
