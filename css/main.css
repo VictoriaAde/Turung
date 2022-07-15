@@ -58,6 +58,9 @@ h6 {
   width: 100%;
   padding: 3px;
 }
+.social-media-div {
+  max-width: 200px;
+}
 
 a.buy-button {
   font-family: "Raleway", sans-serif;
@@ -1224,6 +1227,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   .about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
+  }
+  .social-media-div {
+    margin: 0 auto;
   }
 }
 
