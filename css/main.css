@@ -3,7 +3,10 @@ body {
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
-
+.font-p {
+  font-size: 18px;
+  font-weight: 400;
+}
 a {
   color: #5edae8;
   transition: 0.5s;
@@ -39,6 +42,9 @@ h6 {
 .bg-grey {
   background-color: #f6f6f6;
 }
+.bg-white {
+  background-color: #fff;
+}
 .fnt-teal {
   color: #5edae8;
 }
@@ -51,8 +57,9 @@ h6 {
 .fnt-dark-grey {
   color: #979797;
 }
+
 .fnt-darker-grey {
-  color: #565555;
+  color: #555555;
 }
 .portfolio-div {
   width: 100%;
@@ -62,7 +69,8 @@ h6 {
   width: 200px;
 }
 
-a.buy-button {
+a.buy-button,
+.sale-button {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -78,12 +86,16 @@ a.buy-button {
 }
 
 a.buy-button:hover,
-a.buy-button:active {
+a.buy-button:active,
+.sale-button:hover,
+.sale-button:active {
   background: transparent;
   border: 2px solid #c46200;
   color: #c46200;
 }
-
+.more-btn {
+  display: none;
+}
 /* Back to top button */
 
 .back-to-top {
@@ -1135,7 +1147,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 .footer {
-  background: #fff;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -1154,6 +1165,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .credits a {
   color: #0b335b;
 }
+
 @media (max-width: 991.98px) {
   .social-media-div {
     margin: 0 auto;
@@ -1237,8 +1249,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   .more {
     display: none;
   }
+  .font-p {
+    font-size: 12px;
+    font-weight: 400;
+  }
   .more-btn {
-    display: inline;
+    display: inline !important;
     color: #c46200;
   }
   .show {
