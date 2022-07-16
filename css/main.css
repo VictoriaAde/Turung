@@ -93,7 +93,9 @@ a.buy-button:active,
   border: 2px solid #c46200;
   color: #c46200;
 }
-
+.more-btn {
+  display: none;
+}
 /* Back to top button */
 
 .back-to-top {
@@ -1163,6 +1165,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer .credits a {
   color: #0b335b;
 }
+
 @media (max-width: 991.98px) {
   .social-media-div {
     margin: 0 auto;
@@ -1251,7 +1254,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 400;
   }
   .more-btn {
-    display: inline;
+    display: inline !important;
     color: #c46200;
   }
   .show {
