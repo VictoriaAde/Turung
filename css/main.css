@@ -4,7 +4,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .font-p {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
 }
 a {
   color: #5edae8;
@@ -1209,9 +1210,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .back-to-top {
     bottom: 15px;
   }
-  .font-p {
-    font-size: 12px;
-  }
+
   #header {
     padding: 20px 0;
     height: 74px;
@@ -1246,6 +1245,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 767px) {
   .more {
     display: none;
+  }
+  .font-p {
+    font-size: 12px;
+    font-weight: 400;
   }
   .more-btn {
     display: inline;
