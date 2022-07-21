@@ -6,11 +6,11 @@ Turung is an online smartstore that allows traditional brick and mortar business
 
 ## Screenshot
 
-![Turung Coin](./images/gold-circle.jpg)
+![Turung Coin](./assets/images/gold-circle.jpg)
 
 ## Live Demo
 
-View the [live Demo page](https://www.turung.io/) here ☕
+View the [live Demo page](http://www.turung.io/) here ☕
 
 ## Built With
 
@@ -36,7 +36,7 @@ Load the page and enjoy!
 
 - GitHub: [VictoriaAde](https://github.com/VictoriaAde)
 - Twitter: [@Vickish11](https://twitter.com/Vickish11)
-- LinkedIn: [victoria-a-2992871b3](https://www.linkedin.com/in/victoria-a-2992871b3)
+- LinkedIn: [victoria-a-2992871b3](https://www.linkedin.com/in/victoria-adedayo)
 
 ### Contributor
 
