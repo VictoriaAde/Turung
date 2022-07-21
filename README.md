@@ -36,7 +36,7 @@ Load the page and enjoy!
 
 - GitHub: [VictoriaAde](https://github.com/VictoriaAde)
 - Twitter: [@Vickish11](https://twitter.com/Vickish11)
-- LinkedIn: [victoria-a-2992871b3](https://www.linkedin.com/in/victoria-adedayo)
+- LinkedIn: [Victoria-Adedayo](https://www.linkedin.com/in/victoria-adedayo)
 
 ### Contributor
 
